@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="info.html">Info</li></a>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contactformular</h1>
+        <!-- Contact Formula -->
+        <section>
+            <div>
+                <form>
+                    <div>
+                        <label for="fname">Vorname</label>
+                        <input type="text" id="fname" name="vorname" placeholder="Dein Vorname...">
+                    </div>
+                    <div>
+                        <label for="lname">Nachname</label>
+                        <input type="text" id="lname" name="nachname" placeholder="Dein Nachname...">
+                    </div>
+                    <div>
+                        <label for="mailadresse"></label>
+                    </div>
+                    <div>
+                        <label for="datum">Besuchstag</label>
+                        <input type="date" name="datum" id="datum">
+                    </div>
+                    <div>
+                        <label for="zeit">Besuchszeit</label>
+                        <input type="time" name="time" id="time">
+                    </div>
+                    <div>
+                        <label for="exp">Wie war das Erlebnis:</label>
+                        <p>Schlecht<input type="range" name="exp" id="exp">Gut</p>
+                    </div>
+                    <div>
+                        <label for="empfehlung">Weiterempfehlung:</label>
+                        <input type="radio" name="empfehlung" id="ja" value="ja">
+                        <label for="ja">Ja</label>
+                        <input type="radio" name="empfehlung" id="nein" value="nein">
+                        <label for="nein">Nein</label>
+                    </div>
+                    <div>
+                        <label for="interesse">Welche Tierart hat dir am besten gefallen</label>
+                        <input type="text" list="tierarten" name="interesse" id="interesse">
+                        <datalist id="tierarten">
+                            <option value="Säugetiere"></option>
+                            <option value="Vögeln"></option>
+                            <option value="Fische"></option>
+                            <option value="Insekten"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="kommentar">Kommentar</label>
+                        <textarea rows="5" cols="20" name="kommentar" id="kommentar"></textarea>
+                    </div>
+                    <div>
+                        <label for="Besuchinfo">Besucherinfo:</label>
+                        <select name="besuchinfo" id="besuchinfo">
+                            <option value="1">Allein unterwegs</option>
+                            <option value="2">Familienausflug</option>
+                            <option value="3">Gruppenausflug</option>
+                            <option value="4">Ausflug mit Freunden</option>
+                            <option value="5">was anderes</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Senden">
+                        <input type="reset">
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
