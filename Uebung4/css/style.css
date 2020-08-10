@@ -305,11 +305,15 @@ label {
 input {
     padding-left: 0.5rem;
 }
-label, input, textarea, select, .sub-res {
+label, input, textarea, select, .sub-res, button {
     width: 30rem;
     height: 2.5rem;
     display: flex;
     margin-left: 25%;
+}
+button {
+    align-items: center;
+    justify-content: center;
 }
 textarea {
     resize: vertical;
@@ -330,12 +334,18 @@ form p input {
 .sub-res {
     padding-top: 2rem;
 }
-.sub-res input {
+/* .sub-res input {
     padding-left: 0;
 }
 .sub-res input:nth-child(1) {
     margin-left: 0;
+} */
+.sub-res button {
+    padding-left: 0;
 }
+.sub-res button:nth-child(1) {
+    margin-left: 0;
+} 
 .submit, .reset  {
     color: black;
     font-weight: bold;
@@ -367,10 +377,6 @@ form p input {
         margin-left: 0;
         width: 100%;
         margin-left: 0%;
-    }
-
-    .submit {
-        margin-left: 25%;
     }
     form p {
         margin-left: 0%;
