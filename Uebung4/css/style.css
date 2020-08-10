@@ -60,33 +60,28 @@ li > p {
 }
 
 @media (max-width: 30em) {
-    nav {
+    ul {
         justify-content: center;
     }
     .nav-list{
         margin: 0 1rem;
     }
+    .space {
+        display: none;
+    }
 }
 
+/* Homepage */
 /* welcome page */
 .welcome-div {
     background-image:     linear-gradient(
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
       ),
-      url("../img/rsz_zoo-background.jpg");
-      background-size: cover;
-      height: 100vh;
+    url("../img/rsz_zoo-background.jpg");
+    background-size: cover;
+    height: 100vh;
 }
-/* .welcome-page {
-    display: grid;
-    height: 100%;
-}
-.welcome-page img {
-    width: 100%;
-    max-height: 100vh;
-    margin: auto;
-} */
 .welcome-div {
     position: relative;
     text-align: center;
@@ -106,11 +101,12 @@ li > p {
 
 /* youtube video */
 .intro-page {
-    height: 100vh;
     background: url(../img/footprints-opacity.png) 0 0 round;
     /* background-size: 80rem; */
     background-position: center;
     background-size: 100rem;
+
+    padding: 10rem 0;
 
     display: flex;
     align-items: center;
@@ -143,32 +139,30 @@ iframe:hover {
 }
 @media (max-width: 80em) {
     iframe {
-        width: calc(100vw*(315/560));
-        height: calc(55vw*(315/560));
-        margin-top: 1rem;
+        width: calc(90vw*(315/560));
+        height: calc(45vw*(315/560));
     }
 }
 
 @media (max-width: 60em) {
     iframe {
-        width: calc(120vw*(315/560));
-        height: calc(75vw*(315/560));
-        margin-top: 0;
+        width: calc(100vw*(315/560));
+        height: calc(55vw*(315/560));
     }
 }
 
 @media (max-width: 50em) {
     iframe {
-        width: calc(130vw*(315/560));
-        height: calc(85vw*(315/560));
+        width: calc(120vw*(315/560));
+        height: calc(75vw*(315/560));
     }
 }
 
 /* picture */
 .pic-section {
-    height: 100vh;
     background-color: rgb(230, 230, 230);
     text-align: center;
+    padding: 10rem 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -205,7 +199,7 @@ img {
 @media (max-width: 35rem) {
 }
 
-
+/* Info Page */
 /* Table */
 .table-section {
     /* height: 100vh; */
@@ -279,6 +273,7 @@ td:hover {
     }
 }
 
+/* Contact PAge */
 /* Contact */
 .contact-form {
     display: flex;
@@ -388,6 +383,7 @@ form p input {
         margin-left: 0;
     }
 }
+
 
 /* Footer */
 footer {
