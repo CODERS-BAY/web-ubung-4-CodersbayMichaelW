@@ -1,98 +1,105 @@
 <!DOCTYPE html>
+
 <html lang="de">
+    <head>
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"/>  
 
-<head>
-    <title>Contact</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-</head>
+        <title>Startseite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="info.html">Info</li></a>
-                <li><a href="contact.html">Contact</li></a>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li><p class="space">Bronx Zoo</p></li>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h1>Contactformular</h1>
-        <!-- Contact Formula -->
-        <section>
-            <div>
-                <form>
-                    <div>
-                        <label for="fname">Vorname</label>
-                        <input type="text" id="fname" name="vorname" placeholder="Dein Vorname...">
-                    </div>
-                    <div>
-                        <label for="lname">Nachname</label>
-                        <input type="text" id="lname" name="nachname" placeholder="Dein Nachname...">
-                    </div>
-                    <div>
-                        <label for="mailadresse"></label>
-                    </div>
-                    <div>
-                        <label for="datum">Besuchstag</label>
-                        <input type="date" name="datum" id="datum">
-                    </div>
-                    <div>
-                        <label for="zeit">Besuchszeit</label>
-                        <input type="time" name="time" id="time">
-                    </div>
-                    <div>
-                        <label for="exp">Wie war das Erlebnis:</label>
-                        <p>Schlecht<input type="range" name="exp" id="exp">Gut</p>
-                    </div>
-                    <div>
-                        <label for="empfehlung">Weiterempfehlung:</label>
-                        <input type="radio" name="empfehlung" id="ja" value="ja">
-                        <label for="ja">Ja</label>
-                        <input type="radio" name="empfehlung" id="nein" value="nein">
-                        <label for="nein">Nein</label>
-                    </div>
-                    <div>
-                        <label for="interesse">Welche Tierart hat dir am besten gefallen</label>
-                        <input type="text" list="tierarten" name="interesse" id="interesse">
-                        <datalist id="tierarten">
-                            <option value="Säugetiere"></option>
-                            <option value="Vögeln"></option>
-                            <option value="Fische"></option>
-                            <option value="Insekten"></option>
+        <main>
+            <section class="contact-form">
+                <div class="contact-img">
+                    <img src="img/giraffe.jpg" alt="giraffe looks over a fence">
+                </div>
+                <div>
+                    <form action="#">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email" placeholder="max@muster.com">
+
+                        <label for="date">Visit Day:</label>
+                        <input type="date" id="date" name="country">
+
+                        <label for="time">Visiting Time:</label>
+                        <input type="time" id="time" name="time">
+
+                        <label for="range">How was the Trip</label>
+                        <p>Bad<input class="range" type="range" id="range" name="range">Good</p>
+
+                        <label for="animal">What is your favorite Animal:</label>
+                        <input list="animals" name="animal" id="animal">
+                        <datalist id="animals">
+                            <option value="Cheetah">
+                            <option value="Emporer Penguin">
+                            <option value="Flamingo">
+                            <option value="Giant Panda">
+                            <option value="Alligator">
+                            <option value="Giraffe">
+                            <option value="Meerkat">
+                            <option value="Snow Monkey">
                         </datalist>
-                    </div>
-                    <div>
-                        <label for="kommentar">Kommentar</label>
-                        <textarea rows="5" cols="20" name="kommentar" id="kommentar"></textarea>
-                    </div>
-                    <div>
-                        <label for="Besuchinfo">Besucherinfo:</label>
-                        <select name="besuchinfo" id="besuchinfo">
-                            <option value="1">Allein unterwegs</option>
-                            <option value="2">Familienausflug</option>
-                            <option value="3">Gruppenausflug</option>
-                            <option value="4">Ausflug mit Freunden</option>
-                            <option value="5">was anderes</option>
+
+                        <label for="subject">Comment:</label>
+
+                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+                        <label for="info">Visitinginfo:</label>
+                        <select id="info" name="info">
+                            <option value="alone">By Yourself</option>
+                            <option value="family">Family Trip</option>
+                            <option value="group">Group Excursion</option>
+                            <option value="friends">With Friends</option>
+                            <option value="else">Something Else</option>
                         </select>
-                    </div>
-                    <div>
-                        <input type="submit" value="Senden">
-                        <input type="reset">
-                    </div>
+                        
+                        <article class="sub-res">
+                            <input class="submit" type="submit" value="Submit">
+                            <input class="reset" type="reset" value="Reset">
+                        </article>
+                    </form>
+                </div>
+            </section>
 
+        </main>
 
-                </form>
-            </div>
-        </section>
-    </main>
+        <footer>
+            <!-- Contact -->
+            <section id=contact class="contact-section">
+                <div class="contact-header">
+                    <h2>You also can find us here</h2>
+                    <p><i class="arrow down"></i><i class="arrow down"></i><i class="arrow down"></i></p>
+                </div>
+                <div class="contact-links">
+                    <a href="https:facebook.com" class="icons" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a href="https://twitter.com" class="icons" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                </div>
+            </section>
 
-    <footer>
-
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
