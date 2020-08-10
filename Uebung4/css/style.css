@@ -296,8 +296,8 @@ td:hover {
     border-radius: 100%;
 }
 label {
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5em;
     font-weight: 600;
 }
@@ -367,6 +367,7 @@ form p input {
         width: 100%;
         margin-left: 0%;
     }
+
     .submit {
         margin-left: 25%;
     }
@@ -383,7 +384,11 @@ form p input {
         margin-left: 0;
     }
 }
-
+@media (max-width: 390px) {
+    .long-text {
+        margin-bottom: 1.5rem;
+    }
+}
 
 /* Footer */
 footer {
