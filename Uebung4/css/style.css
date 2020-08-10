@@ -196,8 +196,6 @@ img {
     transform: scale(1.2);
     transition: 0.7s ease-in-out;
 }
-@media (max-width: 35rem) {
-}
 
 /* Info Page */
 /* Table */
@@ -222,7 +220,7 @@ img {
 }
 th {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5vw;
     text-align: left;
     color: rgb(235, 235, 235);
     background-color: rgba(255, 255, 255, 0.25);
@@ -230,7 +228,7 @@ th {
 td {
     color: rgba(255, 255, 255, 0.9);
     font-weight: normal;
-    font-size: 1.7em;
+    font-size: 1vw;
 }
 table {
     text-align: left;
@@ -267,9 +265,12 @@ td:hover {
     transition-property: all;
     transition-timing-function: line;
   }
-@media (max-width: 50em) {
-    th, td {
-        font-size: 1em;
+@media (max-width: 1000px) {
+    th {
+        font-size: 2vw;
+    }
+    td {
+        font-size: 1.5vw;
     }
 }
 
